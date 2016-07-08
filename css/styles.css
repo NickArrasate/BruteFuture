@@ -5,10 +5,10 @@ body{
   background: #222;
   color: white;
   font-family: 'Libre Baskerville', serif;
-}
-
-.wrap{
   height: 95vh;
+}
+.wrap{
+  height: 100%;
   width: 90%;
   max-width: 1150px;
   padding: 0;
@@ -59,7 +59,8 @@ body{
 #title1 p, #title2 p {
   font-size: 8pt;
 }
-#title1 p:last-child, #title2 p:last-child {
+#title1 p:last-child,
+#title2 p:last-child {
   font-size: 6pt;
   right: 0;
   float: right;
@@ -146,7 +147,8 @@ body{
   #title1 p, #title2 p {
     font-size: 8pt;
   }
-  #title1 p:last-child, #title2 p:last-child {
+  #title1 p:last-child,
+  #title2 p:last-child {
     font-size: 6pt;
     right: 0;
     float: left;
@@ -177,13 +179,13 @@ body{
   .feature3{
     width: 43vw;
     height: 38%;
-    padding-top: 50px;
+    padding-top: 30px;
     right: 0;
     top: 475px;
     position: absolute;
   }
   .feature3 p {
-    font-size: 15pt;
+    font-size: 12pt;
     text-align: left;
   }
 }
@@ -212,17 +214,17 @@ body{
     height: 48%;
     margin: 0;
     right: 0;
-    top: 54%;
+    top: 53%;
   }
   .feature3{
     width: 28%;
     height: 48%;
+    padding-top: 50px;
     margin: 0;
     top: auto;
     right: 0;
   }
 }
-
 .clearfix {
   content: '';
   display: table;
