@@ -1,45 +1,180 @@
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px dashed #000;
 }
-
-.columns {
-  min-height: 100px;
+body{
+  background: #222;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
 }
 .wrap{
-  height: 100vh;
+  height: 100%;
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
 }
-.feature1{
+#header{
+  background: white;
+  color: black;
+  padding: 10px 0 0 0;
+}
+#header h3 {
+  margin-left: 20px;
+  margin-bottom: 5px;;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 16pt;
+  color: #222;
+}
+.headerDecoration{
+  width: 60%;
+  border-bottom: solid 1px lightgrey;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#header ul {
+  list-style: none;
+  background: #eee;
+  padding: 6px 0px 10px 15px;
+}
+#header ul li {
+  display: inline;
+  margin: 5px 4px;
+}
+#header ul a {
+  text-decoration: none;
+  font-family: serif;
+  color: black;
+  font-size: 8pt;
+  letter-spacing: 1px;
+}
+#title1, #title2 {
+  width: 100%;
+}
+#title1 h2, #title2 h2 {
+  font-size: 12pt;
+}
+#title1 p, #title2 p {
+  font-size: 8pt;
+}
+#title1 p:last-child, #title2 p:last-child {
+  font-size: 6pt;
+  right: 0;
+  float: right;
+}
+.feature1 {
   width: 100%;
   height: 40%;
-  margin-bottom: 5vh;
-  background: grey;
 }
-.feature2{
+.feature1 img {
   width: 100%;
-  height: 20%;
-  margin-bottom: 5vh;
-  background: lightgrey;
+  height: 100%;
+}
+.feature2 {
+  width: 100%;
+  height: 40%;
+}
+.feature2 img{
+  width: 100%;
+  height: 100%;
 }
 .feature3{
-  width: 100%;
+  max-width: 100%;
   height: 20%;
-  background: darkgrey;
+  background: white;
+  padding: 20px;
 }
-@media screen and (min-width:600px){
-
-  .feature2{
-    width: 45%;
-    height: 50%;
-    margin-left: 1vw;
+.feature3 p {
+  color: #222;
+  font-size: 10pt;
+  text-align: center;
+}
+.decoration{
+  border-bottom: solid 1px grey;
+  width:30%;
+  margin: 0 auto;
+  border-color: lightgrey;
+}
+.decoration1{
+  border-bottom: solid 1px grey;
+  width:60%;
+  margin: 0 auto;
+  height: 20px;
+  border-color: lightgrey;
+}
+.feature2Wrap{
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+@media screen and (min-width:700px){
+  #header{
+    width: 110px;
+    height: 350px;
+  }
+  #header ul{
+    background: none;
+  }
+  #header ul li {
+    display: block;
+  }
+  #title1 {
+    padding-left: 110px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  #title2 {
+    position:absolute;
+    bottom: 0;
+    width: 48%;
+    padding-left: 15px;
+  }
+  #title1, #title2 {
+    height:100px;
+    color: white;
+    background: rgba(2,2,2, .5)
+  }
+  #title1 h2, #title2 h2 {
+    font-size: 12pt;
+  }
+  #title1 p, #title2 p {
+    font-size: 8pt;
+  }
+  #title1 p:last-child, #title2 p:last-child {
+    font-size: 6pt;
+    right: 0;
     float: left;
   }
+  .feature1{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    z-index: -5;
+  }
+  .feature1 img {
+    width: 100%;
+  }
+
+  .feature2{
+    width: 48%;
+    float: left;
+    position: absolute;
+    z-index: -10;
+  }
+  .feature2 img {
+    height: 100%;
+    width: 100%;
+  }
   .feature3{
-    width: 45%;
+    width: 48%;
     height: 50%;
-    margin-right: 1vw;
     float: right;
   }
+}
+.gallery{
+  display: none;
 }
 @media screen and (min-width:1200px){
   .feature1{
@@ -54,8 +189,6 @@
     height: 45%;
     margin: 0;
     float: left;
-    margin-bottom: 5vh;
-    background: lightgrey;
   }
   .feature3{
     width: 30%;
@@ -64,9 +197,10 @@
     float: left;
     background: darkgrey;
   }
+}
 
-
-
-
-
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
 }
