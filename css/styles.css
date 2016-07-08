@@ -8,8 +8,9 @@ body{
 }
 
 .wrap{
-  height: 100%;
+  height: 95vh;
   width: 90%;
+  max-width: 1150px;
   padding: 0;
   margin: 0 auto;
   position: relative;
@@ -65,23 +66,24 @@ body{
 }
 .feature1 {
   width: 100%;
-  height: 40%;
+  height: 20%;
 }
 .feature1 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .feature2 {
   width: 100%;
-  height: 40%;
+  height: 30%;
+  margin-bottom: 35px;
 }
 .feature2 img{
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .feature3{
   width: 100%;
-  height: 40%;
+  height: auto;
   background: white;
   padding: 20px;
 }
@@ -111,15 +113,6 @@ body{
 
 @media screen and (min-width:700px){
 
-  .imageWrap{
-    width: 20%;
-    height: auto;
-    float: left;
-  }
-  .imageWrap img{
-    height: 100%;
-    width: 100%;
-  }
   #header{
     width: 110px;
     height: 350px;
@@ -133,8 +126,8 @@ body{
   #title1 {
     padding-left: 110px;
     padding-right: 15px;
-    margin-bottom: 25px;
     width: 100%;
+    height: 100px;
   }
   #title2 {
     position:absolute;
@@ -163,38 +156,45 @@ body{
     position: absolute;
     width: 100%;
     height: 450px;
-    z-index: -5;
+    clear: both;
   }
   .feature1 img {
     width: 100%;
+    position:absolute;
+    top: 0;
+    z-index: -8;
   }
-
   .feature2{
-    width: 48%;
-    height: 50%;
-    left: 0;
+    width: 43vw;
+    height: 38%;
     position: absolute;
-    z-index: -10;
+    top: 475px;
   }
   .feature2 img {
     height: 100%;
     width: 100%;
   }
   .feature3{
-    width: 48%;
-    height: 50%;
+    width: 43vw;
+    height: 38%;
     padding-top: 50px;
     right: 0;
+    top: 475px;
     position: absolute;
+  }
+  .feature3 p {
+    font-size: 15pt;
+    text-align: left;
   }
 }
 
-@media screen and (min-width:1200px){
-  .feature1Wrap{
-    width: 50vw;
-    height: 95vh;
-  }
+@media screen and (min-width:1100px){
+
   .feature1 {
+    width: 70%;
+    height: 95%;
+  }
+  .feature1 img {
     width: 100%;
     height: 100%;
   }
@@ -204,22 +204,22 @@ body{
     float: left;
   }
   #title1 {
-    width: 800px;
+    width: 100%;
     height: 10vh;
   }
   .feature2{
-    width: 30%;
-    height: 45%;
+    width: 28%;
+    height: 48%;
     margin: 0;
-    float: left;
-
+    right: 0;
+    top: 54%;
   }
   .feature3{
-    width: 30%;
-    height: 45%;
+    width: 28%;
+    height: 48%;
     margin: 0;
-    float: left;
-    background: darkgrey;
+    top: auto;
+    right: 0;
   }
 }
 
